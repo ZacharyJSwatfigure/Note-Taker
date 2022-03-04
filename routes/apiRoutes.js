@@ -1,5 +1,7 @@
+
 const fs = require("fs");
 const { v4: uuidv4 } = require('uuid');
+
 module.exports = function (app) {
     app.get("/api/notes", (request, response) => {
         console.log("\n\nExecuting GET notes request");
@@ -7,6 +9,7 @@ module.exports = function (app) {
         console.log("\nGET request - Returning notes data: " + JSON.stringify(data));
         response.json(data);
     });
+
 
     app.post("/api/notes", (request, response) => {
         const newNote = request.body;
@@ -18,6 +21,8 @@ module.exports = function (app) {
         console.log("\nSuccessfully added new note to 'db.json' file!");
         response.json(data);
     });
+
+
     app.delete("/api/notes/:id", (request, response) => {
         let noteId = request.params.id.toString();
         console.log(`\n\nDELETE note request for noteId: ${noteId}`);
