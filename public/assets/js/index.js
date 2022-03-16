@@ -42,8 +42,9 @@ const saveNote = (note) =>
     body: JSON.stringify(note),
   });
 
-const deleteNote = (id) =>
-  fetch(`/api/notes/${id}`, {
+  const deleteNote = (id) =>
+  fetch(`api/notes/${id}`, 
+    {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json',
@@ -170,6 +171,7 @@ const renderNoteList = async (notes) => {
   }
 };
 
+// Gets notes from the db and renders them to the sidebar
 const getAndRenderNotes = () => getNotes().then(renderNoteList);
 
 if (window.location.pathname === '/notes') {
@@ -178,6 +180,5 @@ if (window.location.pathname === '/notes') {
   noteTitle.addEventListener('keyup', handleRenderSaveBtn);
   noteText.addEventListener('keyup', handleRenderSaveBtn);
 }
-
 
 getAndRenderNotes();

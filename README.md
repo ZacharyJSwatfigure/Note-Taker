@@ -3,21 +3,24 @@
   ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
-  - [Usage](#usage)
   - [License](#license)
   - [Contributing](#contributing)
   - [Questions](#questions)
   - [Credits](#credits)
   ## Description
-  Allows users to create notes almos tlike todos that can be created and deleted.
+  Allows users to create notes (almost like todos,)that can be created and deleted.
   ## Installation
-  npm init -y then npm i into terminal
+  npm i into terminal
   ## License
     This project is covered by the Mozilla license. 
     Click the license button at the top of this file to learn more.
+  ## Contributing
+    contact myself at my email
   ## Questions
-  Questions about this project? <br/>
-  GitHub: https://github.com/super duper <br/>
-  Email: undefined 
+  Questions about this project? Email me at my email
+  <br/>
+  GitHub: https://github.com/ZacharyJSwatfigure
+  <br/>
+  Email: zacharyswatfigure@gmail.com
   ## Credits
-  Zachary
+  Zachary Swatfigure
